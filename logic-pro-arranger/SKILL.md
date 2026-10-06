@@ -15,10 +15,10 @@ description: 为 Logic Pro 写旋律、伴奏、beat、配乐、remix 和 DJ 版
 
 ## 生成与验证
 
-以下路径相对本 skill。MIDI 工具仅用 Python 标准库；音频依赖见 [music-understanding.md](references/music-understanding.md) 和各工具 `--help`。
+以下路径相对本 `SKILL.md` 所在目录（插件包中为 `skills/logic-pro-arranger/`）。从该目录定位脚本，作品写入用户工作目录。MIDI 工具仅用 Python 标准库；音频依赖见 [music-understanding.md](references/music-understanding.md) 和各工具 `--help`。
 
 ```bash
-python3 scripts/new_song.py --title 草稿 --key 'F minor' --bpm 88
+python3 scripts/new_song.py --title 草稿 --key 'F minor' --bpm 88 --root '<用户工作目录>'
 # 编辑生成脚本的 SPEC 与 compose()，写好音乐后再运行：
 python3 '<作品目录>/草稿_生成脚本.py'
 python3 scripts/check_midi.py '<作品目录>/草稿.mid' --script '<作品目录>/草稿_生成脚本.py'

@@ -1,0 +1,20 @@
+{
+  "name": "logic-pro-arranger-plugins",
+  "interface": {
+    "displayName": "Logic Pro Arranger"
+  },
+  "plugins": [
+    {
+      "name": "logic-pro-arranger",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

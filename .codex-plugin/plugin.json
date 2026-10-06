@@ -1,0 +1,16 @@
+{
+  "name": "logic-pro-arranger",
+  "version": "0.2.1",
+  "description": "为 Logic Pro 创作旋律、伴奏、beat 和 remix，生成多轨 MIDI，分析音频并处理采样、人声与分轨。",
+  "author": {
+    "name": "icloudza"
+  },
+  "homepage": "https://github.com/icloudza/logic-pro-arranger",
+  "repository": "https://github.com/icloudza/logic-pro-arranger",
+  "skills": "./logic-pro-arranger",
+  "interface": {
+    "displayName": "Logic Pro Arranger",
+    "shortDescription": "创作旋律与伴奏，生成 MIDI，分析音频和采样",
+    "defaultPrompt": ["为 Logic Pro 创作一段旋律与伴奏，交付可修改的多轨 MIDI 和生成脚本。"]
+  }
+}

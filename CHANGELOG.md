@@ -1,5 +1,11 @@
 # 变更记录
 
+## 0.2.1 — 2026-10-07
+
+- 新增 Claude 插件清单；默认打包为根目录带清单、`skills/logic-pro-arranger/` 带完整技能源码的 `.plugin` / `.zip`，支持 Claude Desktop 本地上传。
+- 新增 Codex 插件清单、仓库插件市场和技能菜单信息；与 Claude 共用技能源码，`--format skill` 保留独立 skill 包。
+- 新增标签触发的 GitHub Release workflow；验证版本与打包后上传插件包、独立 skill 包和 SHA-256 校验文件。
+
 ## 0.2.0 — 2026-10-07
 
 - 校验 MIDI 时间、音高、力度、控制器、字节结构与截断；锁定比较覆盖完整演奏状态。

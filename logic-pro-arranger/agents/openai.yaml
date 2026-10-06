@@ -1,0 +1,4 @@
+interface:
+  display_name: "Logic Pro Arranger"
+  short_description: "为 Logic Pro 创作旋律与伴奏，生成 MIDI 并分析音频采样"
+  default_prompt: "使用 $logic-pro-arranger 为 Logic Pro 创作旋律与伴奏，交付多轨 MIDI 和可修改的生成脚本。"
