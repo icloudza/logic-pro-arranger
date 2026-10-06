@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "music-understanding"
+version = "0.2.0"
+description = "本地音频事件分析、证据查询与采样检索"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26", "scipy>=1.11", "librosa>=0.11,<0.12", "soundfile>=0.12", "matplotlib>=3.8"]
+
+[project.optional-dependencies]
+beats = ["beat-this>=1.1", "torch>=2.3", "torchaudio>=2.3", "torchcrepe>=0.0.24", "setuptools>=68,<81"]
+notes = ["basic-pitch>=0.4", "onnxruntime>=1.17"]
+perception = ["laion-clap>=1.1.6", "torchvision", "transformers>=4.40,<4.46", "wandb<0.20"]
+separation = ["audio-separator>=0.30"]
+test = ["pytest>=8", "mir_eval>=0.8"]
+
+[project.scripts]
+music-worker = "music_understanding.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.setuptools.package-data]
+music_understanding = ["migrations/*.sql"]
