@@ -495,8 +495,7 @@ def cmd_find_loops(a):
     for p, d in zip(hits, durs):
         flag = "" if re.search(r"vox|vocal|voice|choir", os.path.basename(p), re.I) else "  [只匹配 Chop，可能不是人声]"
         print(f"{'?' if d is None else f'{d:6.2f}'} s  {p}{flag}")
-    print(f"共 {len(hits)} 个。提示：Apple Loops 可免版税用于你自己的作品（不能把素材本身单独再分发），"
-          "比切原唱更安全；原唱有版权。下一步：syllables 找音高稳定的字。")
+    print(f"共 {len(hits)} 个。")
 
 
 # ================================================================ syllables
